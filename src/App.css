@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, sans-serif;
+}
+ul {
+  list-style: none;
+}
+.App {
+  padding: 15px;
+  width: 450px;
+  margin: 0 auto;
+}
+.list-header {
+  background-color: rgb(0, 160, 253);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 15px 15px 0 0;
+}
+.todo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 160, 253, 0.2);
+  padding: 10px 15px;
+  border-bottom: 1px solid rgba(0, 160, 253, 0.1);
+}
+.todo-list li input[type="checkbox"] {
+  background-color: #fff;
+  height: 16px;
+  width: 16px;
+  border: 0;
+  appearance: none;
+  position: relative;
+  transition-duration: 0.3s;
+  box-shadow: none;
+  outline: none;
+}
+.todo-list li input[type="checkbox"]:checked {
+  background-color: rgb(0, 160, 253);
+  transition-duration: 0.3s;
+  box-shadow: none;
+}
+.todo-list li input[type="checkbox"]:checked:after {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 10px;
+  left: 3px;
+  top: 3px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 100%;
+}
+.todo-list li:hover {
+  background-color: rgba(0, 160, 253, 0.1);
+}
+.todo-list li .list-text {
+  flex-grow: 1;
+  padding-left: 8px;
+  text-transform: capitalize;
+}
+.btn-delete:hover {
+  color: #000;
+  transition-duration: 0.3s;
+}
+.todo-list li {
+  background-color: "#ddd";
+  padding: "10px 15px";
+  border-bottom: "1px solid #d1d1d1";
+}
+.btn-delete {
+  border: none;
+  background-color: transparent;
+  color: rgb(0, 160, 253);
+  padding: 5px 15px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  font-weight: 500;
+}
+.add-todo-form {
+  display: flex;
+  width: 100%;
+  background-color: rgba(0, 160, 253, 0.3);
+  padding: 10px 15px;
+  border-bottom: 1px solid rgba(0, 160, 253, 0.2);
+  /* margin: 3px 0; */
+}
+.add-todo-form .add-input {
+  border: 1px solid #f1f1f1;
+  flex-grow: 1;
+  background-color: #f1f1f1;
+  padding: 3px 10px;
+  border-radius: 15px 0 0 15px;
+}
+.add-todo-form .add-btn {
+  border: 1px solid rgb(0, 160, 253);
+  background-color: rgb(0, 160, 253);
+  color: #fff;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 0 15px 15px 0;
+}
